@@ -6,7 +6,7 @@
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2800&pause=900&color=58a6ff&center=true&vCenter=true&width=940&lines=Software+Engineer+%E2%80%A2+AI+%26+Backend+%40+Cloudly+Infotech;Architecting+Multi-Agent+LLM+Platforms+with+LangGraph;Building+MCP+Servers+%2B+RAG+Pipelines+over+pgvector;FastAPI+%E2%80%A2+FastMCP+%E2%80%A2+LangChain+%E2%80%A2+Flutter;From+Dhaka%2C+Bangladesh+%F0%9F%87%A7%F0%9F%87%A9" alt="typing-banner" />
 </a>
 
-<br />
+<br /><br />
 
 <a href="https://github.com/Bishwajit-2810"><img src="https://komarev.com/ghpvc/?username=Bishwajit-2810&label=Profile+Views&color=0d1117&style=for-the-badge&labelColor=161b22" alt="profile views" /></a>
 <a href="https://github.com/Bishwajit-2810?tab=followers"><img src="https://img.shields.io/github/followers/Bishwajit-2810?label=Followers&style=for-the-badge&color=0d1117&labelColor=161b22" alt="followers" /></a>
