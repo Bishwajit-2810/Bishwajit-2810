@@ -22,12 +22,12 @@
 <img align="right" alt="coding" width="380" src="https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif" />
 
 ```yaml
-name:     "Bishwajit Kumar Chakraborty"
-role:     "Software Engineer — AI & Backend"
-company:  "Cloudly Infotech Limited"
+name: "Bishwajit Kumar Chakraborty"
+role: "Software Engineer — AI & Backend"
+company: "Cloudly Infotech Limited"
 location: "Dhaka, Bangladesh 🇧🇩"
 education: "B.Sc. CSE — Daffodil International University"
-cgpa:     3.72 / 4.00
+cgpa: 3.72 / 4.00
 
 building:
   - "🧠 Multi-agent LLM platforms with LangGraph"
@@ -36,8 +36,8 @@ building:
   - "🛡  Secure FastAPI service boundaries (RBAC + JWT)"
 
 learning_next: [Advanced RAG eval, LangGraph multi-tenancy, LoRA/QLoRA]
-interests:     [Agentic AI, LLM Ops, NLP, Health Analytics, DSA]
-mantra:        "Ship secure, ship explainable, ship measurable."
+interests: [Agentic AI, LLM Ops, NLP, Health Analytics, DSA]
+mantra: "Ship secure, ship explainable, ship measurable."
 ```
 
 <br clear="right" />
@@ -47,7 +47,7 @@ mantra:        "Ship secure, ship explainable, ship measurable."
 
 <br/>
 
-I'm a final-year CSE student at **Daffodil International University** (CGPA **3.72**, all coursework done) who fell in love with building things that *think*. I joined **Cloudly Infotech Limited** as a full-time Software Engineer Intern after clearing a written AI/ML assessment and two technical interview rounds — and today I architect production agentic systems for sensitive enterprise data.
+I'm a final-year CSE student at **Daffodil International University** (CGPA **3.72**, all coursework done) who fell in love with building things that _think_. I joined **Cloudly Infotech Limited** as a full-time Software Engineer Intern after clearing a written AI/ML assessment and two technical interview rounds — and today I architect production agentic systems for sensitive enterprise data.
 
 What gets me out of bed: turning fuzzy "what if an AI could…" prompts into well-bounded, secure, multi-agent pipelines with crisp tool contracts, explainable retrieval, and zero data leakage. Outside work I'm into local LLMs, IoT + AI, and the occasional datathon.
 
@@ -62,18 +62,20 @@ What gets me out of bed: turning fuzzy "what if an AI could…" prompts into wel
 <td width="50%" valign="top">
 
 ### 🛰 At Cloudly Infotech
+
 - 🧠 Multi-agent LLM platform for **sensitive enterprise data**
 - 🔀 **LangGraph** orchestration · conditional routing · tool calls
 - 🧱 Scoped agents w/ **isolated memory + permissions**
 - 🔌 **FastMCP** servers exposing permissioned tool interfaces
 - 🔍 **pgvector RAG** with chunking & re-ranking
-- 🛡  **FastAPI** boundaries · **RBAC** · **JWT** everywhere
+- 🛡 **FastAPI** boundaries · **RBAC** · **JWT** everywhere
 
 </td>
 <td width="50%" valign="top">
 
 ### 🧪 Side Quests
-- 🖥  Local LLM tooling with **Ollama** (zero-cloud, plugin arch)
+
+- 🖥 Local LLM tooling with **Ollama** (zero-cloud, plugin arch)
 - 🎯 **LoRA / QLoRA** fine-tuning experiments
 - 🩺 **ML / NLP / health analytics** systems (WIP)
 - 📦 Open-source **MCP tooling** for agentic devs
@@ -173,15 +175,49 @@ What gets me out of bed: turning fuzzy "what if an AI could…" prompts into wel
 
 <div align="center">
 
-<a href="https://github.com/Bishwajit-2810/GitHubMCPOfficial">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Bishwajit-2810&repo=GitHubMCPOfficial&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=22d3ee&icon_color=8b5cf6" />
-</a>
-<a href="https://github.com/Bishwajit-2810/VotingSystem">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Bishwajit-2810&repo=VotingSystem&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=22d3ee&icon_color=8b5cf6" />
-</a>
-<a href="https://github.com/Bishwajit-2810/Local_LLM_Project">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Bishwajit-2810&repo=Local_LLM_Project&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=22d3ee&icon_color=8b5cf6" />
-</a>
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+
+### 🚀 GitHub MCP Suite
+**Full-stack agentic GitHub automation**
+
+`FastMCP` · `FastAPI` · `pgvector` · `Flutter`
+
+12-tool MCP server · RAG codebase Q&A · Firebase + OAuth + Fernet-encrypted tokens · streaming Flutter client.
+
+[![Stars](https://img.shields.io/github/stars/Bishwajit-2810/GitHubMCPOfficial?style=for-the-badge&logo=github&color=22d3ee&labelColor=0d1117)](https://github.com/Bishwajit-2810/GitHubMCPOfficial/stargazers) <br/>
+[![Open Repo](https://img.shields.io/badge/Open%20Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Bishwajit-2810/GitHubMCPOfficial)
+
+</td>
+<td width="33%" valign="top" align="center">
+
+### 🗳 Secure Voting System
+**Hardened REST API w/ RBAC**
+
+`Node.js` · `Express` · `MongoDB` · `Docker`
+
+JWT auth · voter/admin RBAC · atomic vote enforcement · bcrypt · Zod validation · Winston logs · docker-compose.
+
+[![Stars](https://img.shields.io/github/stars/Bishwajit-2810/VotingSystem?style=for-the-badge&logo=github&color=22d3ee&labelColor=0d1117)](https://github.com/Bishwajit-2810/VotingSystem/stargazers) <br/>
+[![Open Repo](https://img.shields.io/badge/Open%20Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Bishwajit-2810/VotingSystem)
+
+</td>
+<td width="33%" valign="top" align="center">
+
+### 🖥 Local LLM Assistant
+**Zero-cloud desktop AI**
+
+`Python` · `Ollama` · `Tkinter` · `STT/TTS`
+
+Hot-swappable plugin LLM backend · live CPU/RAM/GPU telemetry · voice I/O · runtime model switching.
+
+[![Stars](https://img.shields.io/github/stars/Bishwajit-2810/Local_LLM_Project?style=for-the-badge&logo=github&color=22d3ee&labelColor=0d1117)](https://github.com/Bishwajit-2810/Local_LLM_Project/stargazers) <br/>
+[![Open Repo](https://img.shields.io/badge/Open%20Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Bishwajit-2810/Local_LLM_Project)
+
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -243,20 +279,20 @@ What gets me out of bed: turning fuzzy "what if an AI could…" prompts into wel
 <div align="center">
 
 <a href="https://github.com/Bishwajit-2810">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Bishwajit-2810&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=22d3ee&icon_color=8b5cf6&text_color=c9d1d9&include_all_commits=true&count_private=true&rank_icon=github" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bishwajit-2810&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=22d3ee&text_color=c9d1d9&langs_count=10" />
+  <img alt="GitHub stats" height="170" src="https://github-readme-stats.shion.dev/api?username=bishwajit-2810&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=22d3ee&icon_color=8b5cf6&text_color=c9d1d9&include_all_commits=true&count_private=true&rank_icon=github" />
+  <img alt="Top languages" height="170" src="https://github-readme-stats.shion.dev/api/top-langs/?username=bishwajit-2810&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=22d3ee&text_color=c9d1d9&langs_count=10" />
 </a>
 
 <br /><br />
 
 <a href="https://github.com/Bishwajit-2810">
-  <img src="https://streak-stats.demolab.com?user=Bishwajit-2810&theme=tokyonight&hide_border=true&background=0D1117&ring=22d3ee&fire=8b5cf6&currStreakLabel=22d3ee" />
+  <img alt="GitHub streak" src="https://streak-stats.demolab.com?user=bishwajit-2810&theme=tokyonight&hide_border=true&background=0D1117&ring=22d3ee&fire=8b5cf6&currStreakLabel=22d3ee" />
 </a>
 
 <br /><br />
 
 <a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=Bishwajit-2810&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" />
+  <img alt="GitHub trophies" src="https://github-profile-trophy.vercel.app/?username=bishwajit-2810&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" />
 </a>
 
 </div>
@@ -273,13 +309,13 @@ What gets me out of bed: turning fuzzy "what if an AI could…" prompts into wel
 
 ## <picture><img src="https://media.giphy.com/media/ObNTw8Uzwy6KQ/giphy.gif" width="28" /></picture> &nbsp;Certifications & Recognition
 
-| 🏆 Credential | 🏛 Issuer | 📅 Date |
-| :--- | :--- | :---: |
-| **AI+ Prompt Engineer Level 1™** | AI CERTs® | Jun 2025 |
-| **Agent X Certified** | NetCom Learning® / AI CERTs | Sep 2025 |
-| **5-Day AI Agents Intensive** | Google × Kaggle | Nov 2025 |
-| **AI-Powered Learning Processing Workshop** | DIU NLP & ML Research Lab | Nov 2025 |
-| **Datathon Participant — Team LazyPenguins** | CUET CSE Fest | 2025 |
+| 🏆 Credential                                | 🏛 Issuer                   | 📅 Date  |
+| :------------------------------------------- | :-------------------------- | :------: |
+| **AI+ Prompt Engineer Level 1™**             | AI CERTs®                   | Jun 2025 |
+| **Agent X Certified**                        | NetCom Learning® / AI CERTs | Sep 2025 |
+| **5-Day AI Agents Intensive**                | Google × Kaggle             | Nov 2025 |
+| **AI-Powered Learning Processing Workshop**  | DIU NLP & ML Research Lab   | Nov 2025 |
+| **Datathon Participant — Team LazyPenguins** | CUET CSE Fest               |   2025   |
 
 ---
 
@@ -306,7 +342,7 @@ What gets me out of bed: turning fuzzy "what if an AI could…" prompts into wel
 
 <br /><br />
 
-📧 &nbsp;**bishwajit2810@gmail.com** &nbsp;·&nbsp; 📱 &nbsp;**+880 1740-694967** &nbsp;·&nbsp; 📍 &nbsp;**Dhaka, Bangladesh**
+📧 &nbsp;**<bishwajit2810@gmail.com>** &nbsp;·&nbsp; 📱 &nbsp;**+880 1740-694967** &nbsp;·&nbsp; 📍 &nbsp;**Dhaka, Bangladesh**
 
 </div>
 
