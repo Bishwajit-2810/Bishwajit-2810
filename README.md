@@ -10,8 +10,8 @@
 
 <a href="https://github.com/Bishwajit-2810"><img src="https://komarev.com/ghpvc/?username=Bishwajit-2810&label=Profile+Views&color=0d1117&style=for-the-badge&labelColor=161b22" alt="profile views" /></a>
 <a href="https://github.com/Bishwajit-2810?tab=followers"><img src="https://img.shields.io/github/followers/Bishwajit-2810?label=Followers&style=for-the-badge&color=0d1117&labelColor=161b22" alt="followers" /></a>
-<a href="https://twitter.com/bishwajit_2810"><img src="https://img.shields.io/twitter/follow/bishwajit_2810?logo=twitter&style=for-the-badge&color=0d1117&labelColor=161b22&logoColor=58a6ff" alt="twitter follow" /></a>
-<img src="https://img.shields.io/badge/Open%20to-Collaborate-0d1117?style=for-the-badge&labelColor=161b22&color=3fb950" alt="open to collab" />
+<a href="https://twitter.com/bishwajit_2810"><img src="https://img.shields.io/badge/Follow%20%40bishwajit__2810-0d1117?style=for-the-badge&logo=x&logoColor=c9d1d9&labelColor=161b22" alt="x follow" /></a>
+<img src="https://img.shields.io/badge/Open%20to-Collaborate-0d1117?style=for-the-badge&labelColor=161b22&color=0d1117" alt="open to collab" />
 
 </div>
 
@@ -316,14 +316,6 @@ Hot-swappable plugin LLM backend · live CPU/RAM/GPU telemetry · voice I/O · r
 
 ---
 
-## <picture><img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="28" /></picture> &nbsp;Random Dev Quote
-
-<div align="center">
-<img alt="random dev quote" src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=github&border=false&bgColor=0d1117" />
-</div>
-
----
-
 ## <picture><img src="https://media.giphy.com/media/jpVnC65DmYeyRL4LHS/giphy.gif" width="28" /></picture> &nbsp;Let's Connect
 
 <div align="center">
@@ -331,7 +323,7 @@ Hot-swappable plugin LLM backend · live CPU/RAM/GPU telemetry · voice I/O · r
 <a href="mailto:bishwajit2810@gmail.com"><img src="https://img.shields.io/badge/Gmail-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=161b22" alt="email" /></a>
 <a href="https://linkedin.com/in/bishwajit-chakraborty-2796ab26a"><img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=58a6ff&labelColor=161b22" alt="linkedin" /></a>
 <a href="https://github.com/Bishwajit-2810"><img src="https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=c9d1d9&labelColor=161b22" alt="github" /></a>
-<a href="https://twitter.com/bishwajit_2810"><img src="https://img.shields.io/badge/Twitter-0d1117?style=for-the-badge&logo=twitter&logoColor=58a6ff&labelColor=161b22" alt="twitter" /></a>
+<a href="https://twitter.com/bishwajit_2810"><img src="https://img.shields.io/badge/X-0d1117?style=for-the-badge&logo=x&logoColor=c9d1d9&labelColor=161b22" alt="x" /></a>
 <a href="https://dev.to/bishwajit2810"><img src="https://img.shields.io/badge/Dev.to-0d1117?style=for-the-badge&logo=devdotto&logoColor=c9d1d9&labelColor=161b22" alt="devto" /></a>
 <a href="https://www.leetcode.com/bishwajit2810"><img src="https://img.shields.io/badge/LeetCode-0d1117?style=for-the-badge&logo=leetcode&logoColor=d29922&labelColor=161b22" alt="leetcode" /></a>
 <a href="https://fb.com/bishwajit.2810"><img src="https://img.shields.io/badge/Facebook-0d1117?style=for-the-badge&logo=facebook&logoColor=58a6ff&labelColor=161b22" alt="facebook" /></a>
@@ -346,20 +338,6 @@ Hot-swappable plugin LLM backend · live CPU/RAM/GPU telemetry · voice I/O · r
 ---
 
 <div align="center">
-
-### 🐍 &nbsp;Watch My Contributions Get Eaten
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Bishwajit-2810/Bishwajit-2810/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Bishwajit-2810/Bishwajit-2810/output/github-contribution-grid-snake.svg" />
-  <img alt="snake animation eating my contributions" src="https://raw.githubusercontent.com/Bishwajit-2810/Bishwajit-2810/output/github-contribution-grid-snake-dark.svg" width="100%" />
-</picture>
-
-<br />
-
-<sub>🐍 <i>auto-themes with your GitHub appearance · regenerated every 12h by</i> <a href="./.github/workflows/snake.yml"><code>.github/workflows/snake.yml</code></a></sub>
-
-<br /><br />
 
 <img src="https://capsule-render.vercel.app/api?type=venom&color=0:58a6ff,50:161b22,100:0d1117&height=140&section=footer&reversal=true&text=Thanks%20for%20stopping%20by!&fontSize=22&fontColor=c9d1d9&fontAlignY=72&animation=fadeIn" alt="footer" />
 
