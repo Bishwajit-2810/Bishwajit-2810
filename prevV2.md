@@ -19,9 +19,11 @@
 
 ## <picture><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28" /></picture> &nbsp;About Me
 
+<img align="right" alt="hacker coding terminal" width="400" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" />
+
 ```yaml
 name: "Bishwajit Kumar Chakraborty"
-role: "Software Engineer Intern — AI & Backend"
+role: "Software Engineer — AI & Backend"
 company: "Cloudly Infotech Limited"
 location: "Dhaka, Bangladesh 🇧🇩"
 education: "B.Sc. CSE — Daffodil Intl. University"
@@ -37,6 +39,19 @@ learning_next: [Advanced RAG eval, LangGraph multi-tenancy, LoRA/QLoRA]
 interests: [Agentic AI, LLM Ops, NLP, Health Analytics, DSA]
 mantra: "ship secure · ship explainable · ship measurable"
 ```
+
+<br clear="right" />
+
+<details>
+<summary>📜 &nbsp;<b>Click to read my story</b></summary>
+
+<br/>
+
+I'm a final-year CSE student at **Daffodil International University** (CGPA **3.72**, all coursework done) who fell in love with building things that _think_. I joined **Cloudly Infotech Limited** as a full-time Software Engineer Intern after clearing a written AI/ML assessment and two technical interview rounds — and today I architect production agentic systems for sensitive enterprise data.
+
+What gets me out of bed: turning fuzzy "what if an AI could…" prompts into well-bounded, secure, multi-agent pipelines with crisp tool contracts, explainable retrieval, and zero data leakage. Outside work I'm into local LLMs, IoT + AI, and the occasional datathon.
+
+</details>
 
 ---
 
@@ -156,7 +171,113 @@ mantra: "ship secure · ship explainable · ship measurable"
 
 ---
 
-## <picture><img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" width="28" /></picture> &nbsp;GitHub Activity
+## <picture><img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="28" /></picture> &nbsp;Featured Projects
+
+<div align="center">
+
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+
+### 🚀 GitHub MCP Suite
+
+**Full-stack agentic GitHub automation**
+
+`FastMCP` · `FastAPI` · `pgvector` · `Flutter`
+
+12-tool MCP server · RAG codebase Q&A · Firebase + OAuth + Fernet-encrypted tokens · streaming Flutter client.
+
+[![Stars](https://img.shields.io/github/stars/Bishwajit-2810/GitHubMCPOfficial?style=for-the-badge&logo=github&logoColor=58a6ff&color=0d1117&labelColor=161b22)](https://github.com/Bishwajit-2810/GitHubMCPOfficial/stargazers) <br/>
+[![Open Repo](https://img.shields.io/badge/Open%20Repo-0d1117?style=for-the-badge&logo=github&logoColor=58a6ff&labelColor=161b22)](https://github.com/Bishwajit-2810/GitHubMCPOfficial)
+
+</td>
+<td width="33%" valign="top" align="center">
+
+### 🗳 Secure Voting System
+
+**Hardened REST API w/ RBAC**
+
+`Node.js` · `Express` · `MongoDB` · `Docker`
+
+JWT auth · voter/admin RBAC · atomic vote enforcement · bcrypt · Zod validation · Winston logs · docker-compose.
+
+[![Stars](https://img.shields.io/github/stars/Bishwajit-2810/VotingSystem?style=for-the-badge&logo=github&logoColor=58a6ff&color=0d1117&labelColor=161b22)](https://github.com/Bishwajit-2810/VotingSystem/stargazers) <br/>
+[![Open Repo](https://img.shields.io/badge/Open%20Repo-0d1117?style=for-the-badge&logo=github&logoColor=58a6ff&labelColor=161b22)](https://github.com/Bishwajit-2810/VotingSystem)
+
+</td>
+<td width="33%" valign="top" align="center">
+
+### 🖥 Local LLM Assistant
+
+**Zero-cloud desktop AI**
+
+`Python` · `Ollama` · `Tkinter` · `STT/TTS`
+
+Hot-swappable plugin LLM backend · live CPU/RAM/GPU telemetry · voice I/O · runtime model switching.
+
+[![Stars](https://img.shields.io/github/stars/Bishwajit-2810/Local_LLM_Project?style=for-the-badge&logo=github&logoColor=58a6ff&color=0d1117&labelColor=161b22)](https://github.com/Bishwajit-2810/Local_LLM_Project/stargazers) <br/>
+[![Open Repo](https://img.shields.io/badge/Open%20Repo-0d1117?style=for-the-badge&logo=github&logoColor=58a6ff&labelColor=161b22)](https://github.com/Bishwajit-2810/Local_LLM_Project)
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<br />
+
+<details>
+<summary><b>🚀 &nbsp;GitHub MCP Suite — Full-Stack GitHub Automation with AI</b></summary>
+
+> `FastMCP` · `FastAPI` · `pgvector` · `Flutter` · `Firebase Auth` · `GitHub GraphQL v2`
+
+- Production-grade **MCP server exposing 12 tools** over **FastMCP + SSE** — repo mgmt, GitHub Projects v2, branch/PR creation, issue tracking, and **RAG-powered codebase Q&A** via pgvector.
+- **BFF API layer** (FastAPI + SQLAlchemy + Alembic + PostgreSQL) with **Firebase Auth**, **GitHub OAuth 2.0**, JWT signing, and **Fernet-encrypted** multi-user token storage.
+- Cross-platform **Flutter** client with **Riverpod**, streaming agent responses, and unified UX over MCP tools + GitHub Projects.
+
+🔗 [Open Repo →](https://github.com/Bishwajit-2810/GitHubMCPOfficial)
+
+</details>
+
+<details>
+<summary><b>🗳 &nbsp;Secure Voting System — Backend API with RBAC</b></summary>
+
+> `Node.js` · `Express` · `MongoDB` · `JWT` · `Docker` · `Zod` · `Winston`
+
+- REST API for electronic voting with **JWT auth**, **voter/admin RBAC**, **atomic double-vote prevention**, **bcrypt** hashing with configurable salt rounds.
+- Structured **Winston** logging with rotation, error-handling middleware, **Zod** schema validation, full **docker-compose** deployment.
+
+🔗 [Open Repo →](https://github.com/Bishwajit-2810/VotingSystem)
+
+</details>
+
+<details>
+<summary><b>💧 &nbsp;Water Quality Monitoring — LoRa IoT + AI</b></summary>
+
+> `Node.js` · `MongoDB` · `Flutter` · `Gemini API` · `LoRa`
+
+- End-to-end IoT pipeline: **pH · turbidity · TDS · flow-rate** sensors → time-series storage with schema validation → automatic threshold alerts.
+- **Gemini API** interprets multi-parameter sensor data for AI-driven anomaly detection and human-readable health assessments.
+- Flutter real-time dashboard with live feeds, historical trend charts, and push notifications — presented to DIU industry leadership.
+
+</details>
+
+<details>
+<summary><b>🖥 &nbsp;Local LLM Desktop Assistant + System Monitor</b></summary>
+
+> `Python` · `Ollama` · `Tkinter` · `STT/TTS` · `psutil`
+
+- Fully-local AI assistant with **zero cloud dependency** and a **hot-swappable plugin** backend architecture.
+- Real-time **CPU / RAM / GPU telemetry** overlay streamed into LLM context for hardware-aware responses.
+- End-to-end **voice interaction** (STT + TTS), configurable wake-word, runtime model switching, conversation memory.
+
+🔗 [Open Repo →](https://github.com/Bishwajit-2810/Local_LLM_Project)
+
+</details>
+
+---
+
+## <picture><img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" width="28" /></picture> &nbsp;GitHub Stats
 
 <div align="center">
 
@@ -165,13 +286,33 @@ mantra: "ship secure · ship explainable · ship measurable"
   <img alt="Top languages" height="170" src="https://github-readme-stats.shion.dev/api/top-langs/?username=bishwajit-2810&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=10" />
 </a>
 
+<br /><br />
+
 <a href="https://github.com/Bishwajit-2810">
   <img alt="GitHub streak" src="https://streak-stats.demolab.com?user=bishwajit-2810&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=bc8cff&currStreakLabel=58a6ff&sideNums=c9d1d9&sideLabels=c9d1d9&dates=8b949e&stroke=58a6ff" />
 </a>
 
-<img alt="commits heartbeat activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=Bishwajit-2810&custom_title=Commits%20Heartbeat&bg_color=0d1117&color=58a6ff&line=bc8cff&point=bc8cff&title_color=58a6ff&area_color=58a6ff&hide_border=true&area=true" />
-
 </div>
+
+---
+
+## <picture><img src="https://media.giphy.com/media/W3QKEujo8vztC/giphy.gif" width="28" /></picture> &nbsp;Contribution Graph
+
+<div align="center">
+<img alt="commits heartbeat activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=Bishwajit-2810&custom_title=Commits%20Heartbeat&bg_color=0d1117&color=58a6ff&line=bc8cff&point=bc8cff&title_color=58a6ff&area_color=58a6ff&hide_border=true&area=true" />
+</div>
+
+---
+
+## <picture><img src="https://media.giphy.com/media/ObNTw8Uzwy6KQ/giphy.gif" width="28" /></picture> &nbsp;Certifications & Recognition
+
+| 🏆 Credential                                | 🏛 Issuer                   | 📅 Date  |
+| :------------------------------------------- | :-------------------------- | :------: |
+| **AI+ Prompt Engineer Level 1™**             | AI CERTs®                   | Jun 2025 |
+| **Agent X Certified**                        | NetCom Learning® / AI CERTs | Sep 2025 |
+| **5-Day AI Agents Intensive**                | Google × Kaggle             | Nov 2025 |
+| **AI-Powered Learning Processing Workshop**  | DIU NLP & ML Research Lab   | Nov 2025 |
+| **Datathon Participant — Team LazyPenguins** | CUET CSE Fest               |   2025   |
 
 ---
 
