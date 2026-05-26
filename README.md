@@ -1,17 +1,17 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:11111b,50:1e1e2e,100:cba6f7&height=240&section=header&text=Bishwajit%20Chakraborty&fontSize=60&fontAlignY=36&fontColor=cdd6f4&desc=AI%20%E2%80%A2%20Backend%20%E2%80%A2%20Multi-Agent%20LLM%20Systems%20%E2%80%A2%20MCP&descAlignY=58&descSize=18&animation=fadeIn" alt="header banner" />
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0d1117,50:161b22,100:58a6ff&height=240&section=header&text=Bishwajit%20Chakraborty&fontSize=60&fontAlignY=36&fontColor=c9d1d9&desc=AI%20%E2%80%A2%20Backend%20%E2%80%A2%20Multi-Agent%20LLM%20Systems%20%E2%80%A2%20MCP&descAlignY=58&descSize=18&animation=fadeIn" alt="header banner" />
 
 <a href="https://github.com/Bishwajit-2810">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2800&pause=900&color=CBA6F7&center=true&vCenter=true&width=940&lines=Software+Engineer+%E2%80%A2+AI+%26+Backend+%40+Cloudly+Infotech;Architecting+Multi-Agent+LLM+Platforms+with+LangGraph;Building+MCP+Servers+%2B+RAG+Pipelines+over+pgvector;FastAPI+%E2%80%A2+FastMCP+%E2%80%A2+LangChain+%E2%80%A2+Flutter;From+Dhaka%2C+Bangladesh+%F0%9F%87%A7%F0%9F%87%A9" alt="typing-banner" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2800&pause=900&color=58a6ff&center=true&vCenter=true&width=940&lines=Software+Engineer+%E2%80%A2+AI+%26+Backend+%40+Cloudly+Infotech;Architecting+Multi-Agent+LLM+Platforms+with+LangGraph;Building+MCP+Servers+%2B+RAG+Pipelines+over+pgvector;FastAPI+%E2%80%A2+FastMCP+%E2%80%A2+LangChain+%E2%80%A2+Flutter;From+Dhaka%2C+Bangladesh+%F0%9F%87%A7%F0%9F%87%A9" alt="typing-banner" />
 </a>
 
 <br /><br />
 
-<a href="https://github.com/Bishwajit-2810"><img src="https://komarev.com/ghpvc/?username=Bishwajit-2810&label=Profile%20Views&color=cba6f7&style=for-the-badge" alt="profile views" /></a>
-<a href="https://github.com/Bishwajit-2810?tab=followers"><img src="https://img.shields.io/github/followers/Bishwajit-2810?label=Followers&style=for-the-badge&color=b4befe&labelColor=11111b" alt="followers" /></a>
-<a href="https://twitter.com/bishwajit_2810"><img src="https://img.shields.io/twitter/follow/bishwajit_2810?logo=twitter&style=for-the-badge&color=89b4fa&labelColor=11111b" alt="twitter follow" /></a>
-<img src="https://img.shields.io/badge/Open%20to-Collaborate-a6e3a1?style=for-the-badge&labelColor=11111b" alt="open to collab" />
+<a href="https://github.com/Bishwajit-2810"><img src="https://komarev.com/ghpvc/?username=Bishwajit-2810&label=Profile+Views&color=0d1117&style=for-the-badge&labelColor=161b22" alt="profile views" /></a>
+<a href="https://github.com/Bishwajit-2810?tab=followers"><img src="https://img.shields.io/github/followers/Bishwajit-2810?label=Followers&style=for-the-badge&color=0d1117&labelColor=161b22" alt="followers" /></a>
+<a href="https://twitter.com/bishwajit_2810"><img src="https://img.shields.io/twitter/follow/bishwajit_2810?logo=twitter&style=for-the-badge&color=0d1117&labelColor=161b22&logoColor=58a6ff" alt="twitter follow" /></a>
+<img src="https://img.shields.io/badge/Open%20to-Collaborate-0d1117?style=for-the-badge&labelColor=161b22&color=3fb950" alt="open to collab" />
 
 </div>
 
@@ -187,8 +187,8 @@ What gets me out of bed: turning fuzzy "what if an AI could…" prompts into wel
 
 12-tool MCP server · RAG codebase Q&A · Firebase + OAuth + Fernet-encrypted tokens · streaming Flutter client.
 
-[![Stars](https://img.shields.io/github/stars/Bishwajit-2810/GitHubMCPOfficial?style=for-the-badge&logo=github&color=cba6f7&labelColor=11111b)](https://github.com/Bishwajit-2810/GitHubMCPOfficial/stargazers) <br/>
-[![Open Repo](https://img.shields.io/badge/Open%20Repo-11111b?style=for-the-badge&logo=github&logoColor=cba6f7)](https://github.com/Bishwajit-2810/GitHubMCPOfficial)
+[![Stars](https://img.shields.io/github/stars/Bishwajit-2810/GitHubMCPOfficial?style=for-the-badge&logo=github&logoColor=58a6ff&color=0d1117&labelColor=161b22)](https://github.com/Bishwajit-2810/GitHubMCPOfficial/stargazers) <br/>
+[![Open Repo](https://img.shields.io/badge/Open%20Repo-0d1117?style=for-the-badge&logo=github&logoColor=58a6ff&labelColor=161b22)](https://github.com/Bishwajit-2810/GitHubMCPOfficial)
 
 </td>
 <td width="33%" valign="top" align="center">
@@ -201,8 +201,8 @@ What gets me out of bed: turning fuzzy "what if an AI could…" prompts into wel
 
 JWT auth · voter/admin RBAC · atomic vote enforcement · bcrypt · Zod validation · Winston logs · docker-compose.
 
-[![Stars](https://img.shields.io/github/stars/Bishwajit-2810/VotingSystem?style=for-the-badge&logo=github&color=cba6f7&labelColor=11111b)](https://github.com/Bishwajit-2810/VotingSystem/stargazers) <br/>
-[![Open Repo](https://img.shields.io/badge/Open%20Repo-11111b?style=for-the-badge&logo=github&logoColor=cba6f7)](https://github.com/Bishwajit-2810/VotingSystem)
+[![Stars](https://img.shields.io/github/stars/Bishwajit-2810/VotingSystem?style=for-the-badge&logo=github&logoColor=58a6ff&color=0d1117&labelColor=161b22)](https://github.com/Bishwajit-2810/VotingSystem/stargazers) <br/>
+[![Open Repo](https://img.shields.io/badge/Open%20Repo-0d1117?style=for-the-badge&logo=github&logoColor=58a6ff&labelColor=161b22)](https://github.com/Bishwajit-2810/VotingSystem)
 
 </td>
 <td width="33%" valign="top" align="center">
@@ -215,8 +215,8 @@ JWT auth · voter/admin RBAC · atomic vote enforcement · bcrypt · Zod validat
 
 Hot-swappable plugin LLM backend · live CPU/RAM/GPU telemetry · voice I/O · runtime model switching.
 
-[![Stars](https://img.shields.io/github/stars/Bishwajit-2810/Local_LLM_Project?style=for-the-badge&logo=github&color=cba6f7&labelColor=11111b)](https://github.com/Bishwajit-2810/Local_LLM_Project/stargazers) <br/>
-[![Open Repo](https://img.shields.io/badge/Open%20Repo-11111b?style=for-the-badge&logo=github&logoColor=cba6f7)](https://github.com/Bishwajit-2810/Local_LLM_Project)
+[![Stars](https://img.shields.io/github/stars/Bishwajit-2810/Local_LLM_Project?style=for-the-badge&logo=github&logoColor=58a6ff&color=0d1117&labelColor=161b22)](https://github.com/Bishwajit-2810/Local_LLM_Project/stargazers) <br/>
+[![Open Repo](https://img.shields.io/badge/Open%20Repo-0d1117?style=for-the-badge&logo=github&logoColor=58a6ff&labelColor=161b22)](https://github.com/Bishwajit-2810/Local_LLM_Project)
 
 </td>
 </tr>
@@ -282,14 +282,14 @@ Hot-swappable plugin LLM backend · live CPU/RAM/GPU telemetry · voice I/O · r
 <div align="center">
 
 <a href="https://github.com/Bishwajit-2810">
-  <img alt="GitHub stats" height="170" src="https://github-readme-stats.shion.dev/api?username=bishwajit-2810&show_icons=true&theme=catppuccin_mocha&hide_border=true&bg_color=11111B&title_color=cba6f7&icon_color=b4befe&text_color=cdd6f4&include_all_commits=true&count_private=true&rank_icon=github" />
-  <img alt="Top languages" height="170" src="https://github-readme-stats.shion.dev/api/top-langs/?username=bishwajit-2810&layout=compact&theme=catppuccin_mocha&hide_border=true&bg_color=11111B&title_color=cba6f7&text_color=cdd6f4&langs_count=10" />
+  <img alt="GitHub stats" height="170" src="https://github-readme-stats.shion.dev/api?username=bishwajit-2810&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=bc8cff&text_color=c9d1d9&include_all_commits=true&count_private=true&rank_icon=github" />
+  <img alt="Top languages" height="170" src="https://github-readme-stats.shion.dev/api/top-langs/?username=bishwajit-2810&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=10" />
 </a>
 
 <br /><br />
 
 <a href="https://github.com/Bishwajit-2810">
-  <img alt="GitHub streak" src="https://streak-stats.demolab.com?user=bishwajit-2810&theme=tokyonight&hide_border=true&background=11111B&ring=cba6f7&fire=f5c2e7&currStreakLabel=cba6f7&sideNums=cdd6f4&sideLabels=cdd6f4&dates=a6adc8&stroke=cba6f7" />
+  <img alt="GitHub streak" src="https://streak-stats.demolab.com?user=bishwajit-2810&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=bc8cff&currStreakLabel=58a6ff&sideNums=c9d1d9&sideLabels=c9d1d9&dates=8b949e&stroke=58a6ff" />
 </a>
 
 </div>
@@ -299,7 +299,7 @@ Hot-swappable plugin LLM backend · live CPU/RAM/GPU telemetry · voice I/O · r
 ## <picture><img src="https://media.giphy.com/media/W3QKEujo8vztC/giphy.gif" width="28" /></picture> &nbsp;Contribution Graph
 
 <div align="center">
-<img alt="commits heartbeat activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=Bishwajit-2810&custom_title=Commits%20Heartbeat&bg_color=11111B&color=cba6f7&line=b4befe&point=f5c2e7&title_color=cba6f7&area_color=cba6f7&hide_border=true&area=true" />
+<img alt="commits heartbeat activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=Bishwajit-2810&custom_title=Commits%20Heartbeat&bg_color=0d1117&color=58a6ff&line=bc8cff&point=bc8cff&title_color=58a6ff&area_color=58a6ff&hide_border=true&area=true" />
 </div>
 
 ---
@@ -319,7 +319,7 @@ Hot-swappable plugin LLM backend · live CPU/RAM/GPU telemetry · voice I/O · r
 ## <picture><img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="28" /></picture> &nbsp;Random Dev Quote
 
 <div align="center">
-<img alt="random dev quote" src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=catppuccin&border=false&bgColor=11111B" />
+<img alt="random dev quote" src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=github&border=false&bgColor=0d1117" />
 </div>
 
 ---
@@ -328,14 +328,14 @@ Hot-swappable plugin LLM backend · live CPU/RAM/GPU telemetry · voice I/O · r
 
 <div align="center">
 
-<a href="mailto:bishwajit2810@gmail.com"><img src="https://img.shields.io/badge/Gmail-cba6f7?style=for-the-badge&logo=gmail&logoColor=11111b&labelColor=11111b" alt="email" /></a>
-<a href="https://linkedin.com/in/bishwajit-chakraborty-2796ab26a"><img src="https://img.shields.io/badge/LinkedIn-89b4fa?style=for-the-badge&logo=linkedin&logoColor=11111b&labelColor=11111b" alt="linkedin" /></a>
-<a href="https://github.com/Bishwajit-2810"><img src="https://img.shields.io/badge/GitHub-b4befe?style=for-the-badge&logo=github&logoColor=11111b&labelColor=11111b" alt="github" /></a>
-<a href="https://twitter.com/bishwajit_2810"><img src="https://img.shields.io/badge/Twitter-94e2d5?style=for-the-badge&logo=twitter&logoColor=11111b&labelColor=11111b" alt="twitter" /></a>
-<a href="https://dev.to/bishwajit2810"><img src="https://img.shields.io/badge/Dev.to-f5c2e7?style=for-the-badge&logo=devdotto&logoColor=11111b&labelColor=11111b" alt="devto" /></a>
-<a href="https://www.leetcode.com/bishwajit2810"><img src="https://img.shields.io/badge/LeetCode-fab387?style=for-the-badge&logo=leetcode&logoColor=11111b&labelColor=11111b" alt="leetcode" /></a>
-<a href="https://fb.com/bishwajit.2810"><img src="https://img.shields.io/badge/Facebook-89dceb?style=for-the-badge&logo=facebook&logoColor=11111b&labelColor=11111b" alt="facebook" /></a>
-<a href="https://instagram.com/bishwajit_2810/"><img src="https://img.shields.io/badge/Instagram-f38ba8?style=for-the-badge&logo=instagram&logoColor=11111b&labelColor=11111b" alt="instagram" /></a>
+<a href="mailto:bishwajit2810@gmail.com"><img src="https://img.shields.io/badge/Gmail-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335&labelColor=161b22" alt="email" /></a>
+<a href="https://linkedin.com/in/bishwajit-chakraborty-2796ab26a"><img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=58a6ff&labelColor=161b22" alt="linkedin" /></a>
+<a href="https://github.com/Bishwajit-2810"><img src="https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=c9d1d9&labelColor=161b22" alt="github" /></a>
+<a href="https://twitter.com/bishwajit_2810"><img src="https://img.shields.io/badge/Twitter-0d1117?style=for-the-badge&logo=twitter&logoColor=58a6ff&labelColor=161b22" alt="twitter" /></a>
+<a href="https://dev.to/bishwajit2810"><img src="https://img.shields.io/badge/Dev.to-0d1117?style=for-the-badge&logo=devdotto&logoColor=c9d1d9&labelColor=161b22" alt="devto" /></a>
+<a href="https://www.leetcode.com/bishwajit2810"><img src="https://img.shields.io/badge/LeetCode-0d1117?style=for-the-badge&logo=leetcode&logoColor=d29922&labelColor=161b22" alt="leetcode" /></a>
+<a href="https://fb.com/bishwajit.2810"><img src="https://img.shields.io/badge/Facebook-0d1117?style=for-the-badge&logo=facebook&logoColor=58a6ff&labelColor=161b22" alt="facebook" /></a>
+<a href="https://instagram.com/bishwajit_2810/"><img src="https://img.shields.io/badge/Instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=f85149&labelColor=161b22" alt="instagram" /></a>
 
 <br /><br />
 
@@ -361,7 +361,7 @@ Hot-swappable plugin LLM backend · live CPU/RAM/GPU telemetry · voice I/O · r
 
 <br /><br />
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:cba6f7,50:1e1e2e,100:11111b&height=140&section=footer&reversal=true&text=Thanks%20for%20stopping%20by!&fontSize=22&fontColor=cdd6f4&fontAlignY=72&animation=fadeIn" alt="footer" />
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:58a6ff,50:161b22,100:0d1117&height=140&section=footer&reversal=true&text=Thanks%20for%20stopping%20by!&fontSize=22&fontColor=c9d1d9&fontAlignY=72&animation=fadeIn" alt="footer" />
 
 <sub>⭐ &nbsp;If something here sparked an idea, hit follow — I ship a lot of agentic stuff. &nbsp;⭐</sub>
 
