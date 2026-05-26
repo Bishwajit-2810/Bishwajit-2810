@@ -6,7 +6,7 @@
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2800&pause=900&color=58a6ff&center=true&vCenter=true&width=940&lines=Software+Engineer+%E2%80%A2+AI+%26+Backend+%40+Cloudly+Infotech;Architecting+Multi-Agent+LLM+Platforms+with+LangGraph;Building+MCP+Servers+%2B+RAG+Pipelines+over+pgvector;FastAPI+%E2%80%A2+FastMCP+%E2%80%A2+LangChain+%E2%80%A2+Flutter;From+Dhaka%2C+Bangladesh+%F0%9F%87%A7%F0%9F%87%A9" alt="typing-banner" />
 </a>
 
-<br /><br />
+<br />
 
 <a href="https://github.com/Bishwajit-2810"><img src="https://komarev.com/ghpvc/?username=Bishwajit-2810&label=Profile+Views&color=0d1117&style=for-the-badge&labelColor=161b22" alt="profile views" /></a>
 <a href="https://github.com/Bishwajit-2810?tab=followers"><img src="https://img.shields.io/github/followers/Bishwajit-2810?label=Followers&style=for-the-badge&color=0d1117&labelColor=161b22" alt="followers" /></a>
@@ -14,8 +14,6 @@
 <img src="https://img.shields.io/badge/Open%20to-Collaborate-0d1117?style=for-the-badge&labelColor=161b22&color=0d1117" alt="open to collab" />
 
 </div>
-
-<br />
 
 ## <picture><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28" /></picture> &nbsp;About Me
 
@@ -188,17 +186,11 @@ mantra: "ship secure · ship explainable · ship measurable"
 <a href="https://fb.com/bishwajit.2810"><img src="https://img.shields.io/badge/Facebook-0d1117?style=for-the-badge&logo=facebook&logoColor=58a6ff&labelColor=161b22" alt="facebook" /></a>
 <a href="https://instagram.com/bishwajit_2810/"><img src="https://img.shields.io/badge/Instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=f85149&labelColor=161b22" alt="instagram" /></a>
 
-<br /><br />
-
-📧 &nbsp;**<bishwajit2810@gmail.com>** &nbsp;·&nbsp; 📱 &nbsp;**+880 1740-694967** &nbsp;·&nbsp; 📍 &nbsp;**Dhaka, Bangladesh**
-
 </div>
 
 ---
 
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:58a6ff,50:161b22,100:0d1117&height=140&section=footer&reversal=true&text=Thanks%20for%20stopping%20by!&fontSize=22&fontColor=c9d1d9&fontAlignY=72&animation=fadeIn" alt="footer" />
 
 <sub>⭐ &nbsp;If something here sparked an idea, hit follow — I ship a lot of agentic stuff. &nbsp;⭐</sub>
 
