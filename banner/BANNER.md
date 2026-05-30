@@ -60,10 +60,10 @@ Everything is inline in `banner.html`:
 ### Option A — Headless Chrome (one command, repeatable)
 
 ```bash
-# PNG, 2× for retina sharpness -> outputs a 2800 × 680 image
+# PNG at 4× -> outputs a crisp 5600 × 1360 image
 google-chrome-stable --headless --screenshot=banner.png \
   --window-size=1400,340 --default-background-color=00000000 \
-  --force-device-scale-factor=2 \
+  --force-device-scale-factor=4 \
   "file://$PWD/banner.html"
 ```
 
@@ -74,7 +74,9 @@ Notes:
   `--disable-gpu` to silence it if you like; it's not required.
 - `--default-background-color=00000000` keeps the corners transparent (the card has rounded
   corners); use `ffffffff` for an opaque white page background.
-- Bump `--force-device-scale-factor` to `3` for an even sharper `4200 × 1020` image.
+- `--force-device-scale-factor` is the resolution multiplier: `2` → 2800×680, `4` → 5600×1360.
+  The banner is all vector text + SVG, so cranking it up stays perfectly crisp (no upscaling
+  blur). Use `4` if uploads look soft — the file stays a few MB, well under platform limits.
 
 **Want a JPG?** Headless Chrome only writes PNG, so convert the PNG afterward (JPG has no
 transparency, so flatten the rounded corners onto a background — here near-black `#06070b`):
@@ -158,15 +160,20 @@ Bangladesh`, with a small glowing blue dot before each (same dot design as banne
 ### Export
 
 ```bash
+# 4× -> crisp 6336 × 1584 (LinkedIn upscales the cover, so go high-res to avoid blur)
 google-chrome-stable --headless --screenshot=linkedin-banner.png \
   --window-size=1584,396 --default-background-color=00000000 \
-  --force-device-scale-factor=2 \
+  --force-device-scale-factor=4 \
   "file://$PWD/linkedin-banner.html"
 ```
 
 > LinkedIn's safe zone shifts between desktop and mobile (sides get cropped on mobile). The
 > centered layout survives both; just keep any new content out of the lower-left and away from
 > the extreme edges.
+>
+> **Blurry on LinkedIn?** That's upscaling — LinkedIn renders the cover larger than 1584px on
+> wide/high-DPI screens. Export at `--force-device-scale-factor=4` (done above) for a sharp
+> 6336×1584 source; LinkedIn downscales that cleanly.
 
 ---
 
@@ -175,5 +182,5 @@ google-chrome-stable --headless --screenshot=linkedin-banner.png \
 | Use                   | Dimensions (`--W × --H`) | Notes                          |
 | --------------------- | ------------------------ | ------------------------------ |
 | LinkedIn cover        | 1584 × 396               | safe zone — keep text centered |
-| GitHub profile README | 1400 × 340 (default)     | renders crisply at 2×          |
+| GitHub profile README | 1400 × 340 (default)     | export at 4× for crisp retina  |
 | Twitter / X header    | 1500 × 500               | adjust `--H` for more height   |
