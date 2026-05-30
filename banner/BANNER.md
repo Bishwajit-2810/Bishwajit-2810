@@ -1,11 +1,24 @@
 # LinkedIn / GitHub Banner Generator
 
-A single self-contained HTML file — [banner.html](banner.html) — that renders a dark, modern
-profile banner (name, location, a glowing multi-agent network graph, tagline, and tech-stack
-chips). Open it in a browser and export it to a high-quality PNG/JPG at any resolution. No
-build step, no JS dependencies.
+Self-contained HTML files that render a dark, modern profile banner (glowing multi-agent
+network graph, serif headline, and tech-stack chips). Open one in a browser and export it to
+a high-quality PNG/JPG at any resolution. No build step, no JS dependencies.
 
-![banner preview](banner.png)
+## Two variants
+
+| File                                         | Size       | Best for                 | Headline                                   |
+| -------------------------------------------- | ---------- | ------------------------ | ------------------------------------------ |
+| [banner.html](banner.html)                   | 1400 × 340 | GitHub README / X header | **your name** (Bishwajit Chakraborty)      |
+| [linkedin-banner.html](linkedin-banner.html) | 1584 × 396 | LinkedIn cover photo     | **value prop** (Multi-Agent LLM Platforms) |
+
+> **Why two?** On LinkedIn your name + photo are already overlaid on the banner, so repeating
+> the name is redundant and the lower-left gets covered by the avatar. The LinkedIn variant
+> drops the name, leads with a value-prop headline, and keeps everything clear of the avatar
+> punch-out. The GitHub/X variant has no such overlay, so it's name-forward.
+
+![GitHub banner preview](banner.png)
+
+![LinkedIn banner preview](linkedin-banner.png)
 
 ---
 
@@ -111,6 +124,49 @@ const puppeteer = require("puppeteer");
 
 > **Tip:** always wait for fonts (`waitUntil: "networkidle0"`). If you screenshot too early
 > the serif name falls back to a system font and won't match.
+
+---
+
+## LinkedIn variant — [linkedin-banner.html](linkedin-banner.html)
+
+Same visual language as the GitHub banner, retuned for a LinkedIn cover photo (`1584 × 396`).
+
+What's different:
+
+- **No name.** A centered, value-prop **headline** — _"Architecting **Multi-Agent LLM
+  Platforms**"_ (the stack phrase has a blue→purple gradient text fill) — plus an italic
+  sub-line: _"LangGraph orchestration & MCP servers & RAG over pgvector — secure, explainable,
+  measurable."_
+- **Avatar-safe layout.** Content is centered and pulled slightly above the vertical middle so
+  nothing lands in the **lower-left**, where LinkedIn overlays your profile photo + name.
+- **Dotted handle.** Top-right handle reads `● github.com/Bishwajit-2810 · ● Dhaka,
+Bangladesh`, with a small glowing blue dot before each (same dot design as banner.html).
+- **Richer graph.** Ambient glow blooms behind the hubs, denser node clusters on each side,
+  scattered "stars," faint spanning bridges, and triple halo rings.
+
+### Editing the LinkedIn variant
+
+| Want to change…      | Edit this                                            |
+| -------------------- | ---------------------------------------------------- |
+| Headline             | `.headline` text (wrap stack phrase in `.grad`)      |
+| Sub-line             | `.sub` text                                          |
+| Handle / location    | `.handle` markup (`.gh`, `.loc`)                     |
+| Handle dots          | the `.handle .gh::before, .handle .loc::before` rule |
+| Tech chips           | the `.badge` spans inside `.badges`                  |
+| Graph blooms / stars | `.bloom`, `.star`, and the `<defs>` bloom gradients  |
+
+### Export
+
+```bash
+google-chrome-stable --headless --screenshot=linkedin-banner.png \
+  --window-size=1584,396 --default-background-color=00000000 \
+  --force-device-scale-factor=2 \
+  "file://$PWD/linkedin-banner.html"
+```
+
+> LinkedIn's safe zone shifts between desktop and mobile (sides get cropped on mobile). The
+> centered layout survives both; just keep any new content out of the lower-left and away from
+> the extreme edges.
 
 ---
 

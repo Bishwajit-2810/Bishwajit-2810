@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bishwajit Chakraborty — LinkedIn Banner</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg-0: #06070b;
+        --bg-1: #0a0c12;
+        --bg-2: #0d0f16;
+        --border: #20242f;
+        --text: #f3f4f7;
+        --muted: #8b91a1;
+        --faint: #5a6072;
+        --accent-blue: #4da3ff;
+        --accent-purple: #b06ef0;
+
+        /* LinkedIn cover = 1584 × 396 */
+        --W: 1584px;
+        --H: 396px;
+
+        /* lower-left zone where the profile photo overlaps — kept clear */
+        --avatar-safe: 360px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        background: var(--bg-0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        font-family: "JetBrains Mono", monospace;
+      }
+
+      .banner {
+        position: relative;
+        width: var(--W);
+        height: var(--H);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        overflow: hidden;
+        background:
+          radial-gradient(120% 150% at 15% 15%, #11141d 0%, transparent 55%),
+          radial-gradient(90% 130% at 85% 88%, #100d1a 0%, transparent 60%),
+          linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 100%);
+        color: var(--text);
+      }
+
+      .banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          transparent 0%,
+          var(--accent-blue) 20%,
+          #8a7bf0 50%,
+          var(--accent-purple) 78%,
+          transparent 100%
+        );
+        opacity: 0.9;
+      }
+
+      /* ---- centered hero (kept above the avatar punch-out at bottom-left) ---- */
+      .hero {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-54%);
+        text-align: center;
+        z-index: 3;
+        padding: 0 60px;
+      }
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 16px;
+        font-size: 13px;
+        letter-spacing: 0.42em;
+        color: #aab1c2;
+        font-weight: 500;
+        text-shadow: 0 0 12px rgba(170, 177, 194, 0.35);
+      }
+      .eyebrow .rule {
+        width: 40px;
+        height: 2px;
+        background: var(--muted);
+        opacity: 0.6;
+      }
+      .headline {
+        font-family: "Playfair Display", serif;
+        font-weight: 600;
+        font-size: 54px;
+        line-height: 1.08;
+        margin-top: 16px;
+        color: var(--text);
+      }
+      .headline .grad {
+        background: linear-gradient(90deg, #6fb4ff 0%, #b06ef0 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .sub {
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 21px;
+        margin-top: 14px;
+        color: var(--muted);
+      }
+      .sub .amp {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-style: normal;
+        font-size: 0.92em;
+        padding: 0 2px;
+      }
+
+      /* ---- chips, centered under the sub ---- */
+      .badges {
+        display: flex;
+        justify-content: center;
+        gap: 11px;
+        margin-top: 22px;
+      }
+      .badge {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 12.5px;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        color: #d4d9e4;
+        padding: 7px 16px;
+        border: 1px solid rgba(120, 150, 210, 0.35);
+        border-radius: 999px;
+        background: linear-gradient(
+          180deg,
+          rgba(120, 150, 210, 0.1),
+          rgba(120, 150, 210, 0.03)
+        );
+        white-space: nowrap;
+        box-shadow:
+          0 0 14px rgba(77, 163, 255, 0.22),
+          0 0 3px rgba(77, 163, 255, 0.3),
+          inset 0 0 8px rgba(120, 150, 210, 0.08);
+        text-shadow: 0 0 10px rgba(140, 175, 235, 0.45);
+      }
+
+      /* ---- handle, top-right (clear of avatar) ---- */
+      .handle {
+        position: absolute;
+        top: 28px;
+        right: 40px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 13px;
+        color: var(--faint);
+        z-index: 3;
+      }
+      .handle .sep {
+        opacity: 0.45;
+      }
+      .handle .gh,
+      .handle .loc {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        color: var(--muted);
+      }
+      /* small glowing dot before both the github handle and the location
+         (same design as banner.html's .meta .loc::before) */
+      .handle .gh::before,
+      .handle .loc::before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: var(--accent-blue);
+        box-shadow: 0 0 10px 2px rgba(77, 163, 255, 0.7);
+      }
+
+      /* ---- network graph backdrop ---- */
+      .graph {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0.9;
+        pointer-events: none;
+      }
+      .graph .edge {
+        stroke: url(#edgeGrad);
+        stroke-width: 1.1;
+        stroke-dasharray: 5 7;
+        stroke-linecap: round;
+        opacity: 0.45;
+      }
+      .graph .edge.dim {
+        opacity: 0.22;
+      }
+      .graph .node {
+        fill: #717a8c;
+        opacity: 0.6;
+      }
+      .graph .node.sm {
+        opacity: 0.35;
+      }
+      .graph .glow-blue {
+        fill: url(#nodeBlue);
+        filter: url(#soft);
+      }
+      .graph .glow-cyan {
+        fill: url(#nodeCyan);
+        filter: url(#soft);
+      }
+      .graph .glow-purple {
+        fill: url(#nodePurple);
+        filter: url(#soft);
+      }
+      .graph .ring {
+        fill: none;
+        stroke-width: 1;
+      }
+      .graph .ring.blue {
+        stroke: rgba(77, 163, 255, 0.4);
+      }
+      .graph .ring.purple {
+        stroke: rgba(176, 110, 240, 0.4);
+      }
+      .graph .ring.faint {
+        opacity: 0.3;
+      }
+      .graph .ring.fainter {
+        opacity: 0.14;
+      }
+      .graph .ring.faintest {
+        opacity: 0.07;
+      }
+      .graph .bloom {
+        opacity: 0.7;
+      }
+      .graph .star {
+        fill: #c2ccdd;
+      }
+      .graph .edge.faint2 {
+        opacity: 0.1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner" id="banner">
+      <!-- network graph backdrop -->
+      <svg
+        class="graph"
+        viewBox="0 0 1584 396"
+        preserveAspectRatio="xMidYMid slice"
+      >
+        <defs>
+          <linearGradient id="edgeGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#3a4150" />
+            <stop offset="55%" stop-color="#4a6b8c" />
+            <stop offset="100%" stop-color="#7d5bbf" />
+          </linearGradient>
+          <radialGradient id="nodeBlue" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#cfe6ff" />
+            <stop offset="35%" stop-color="#4da3ff" />
+            <stop offset="100%" stop-color="#1e63c8" />
+          </radialGradient>
+          <radialGradient id="nodeCyan" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#e2f6ff" />
+            <stop offset="40%" stop-color="#6fc4ff" />
+            <stop offset="100%" stop-color="#2f8fdc" />
+          </radialGradient>
+          <radialGradient id="nodePurple" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#f0ddff" />
+            <stop offset="40%" stop-color="#b06ef0" />
+            <stop offset="100%" stop-color="#7a3fc0" />
+          </radialGradient>
+          <filter id="soft" x="-120%" y="-120%" width="340%" height="340%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="0.6" result="b" />
+            <feDropShadow
+              dx="0"
+              dy="0"
+              stdDeviation="6"
+              flood-color="#4da3ff"
+              flood-opacity="0.5"
+            />
+          </filter>
+          <!-- large ambient glow blooms behind the hubs -->
+          <radialGradient id="bloomBlue" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#4da3ff" stop-opacity="0.30" />
+            <stop offset="45%" stop-color="#3b7fd6" stop-opacity="0.10" />
+            <stop offset="100%" stop-color="#4da3ff" stop-opacity="0" />
+          </radialGradient>
+          <radialGradient id="bloomPurple" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#b06ef0" stop-opacity="0.28" />
+            <stop offset="45%" stop-color="#8a54d0" stop-opacity="0.10" />
+            <stop offset="100%" stop-color="#b06ef0" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+
+        <!-- ambient glow blooms behind the hubs -->
+        <circle
+          class="bloom"
+          cx="150"
+          cy="140"
+          r="150"
+          fill="url(#bloomBlue)"
+        />
+        <circle
+          class="bloom"
+          cx="1380"
+          cy="150"
+          r="150"
+          fill="url(#bloomPurple)"
+        />
+
+        <!-- faint long bridges spanning the network (kept dim, behind text) -->
+        <line class="edge faint2" x1="360" y1="100" x2="1300" y2="120" />
+        <line class="edge faint2" x1="300" y1="300" x2="1320" y2="300" />
+
+        <!-- left cluster -->
+        <g>
+          <line class="edge" x1="120" y1="130" x2="250" y2="80" />
+          <line class="edge dim" x1="120" y1="130" x2="180" y2="255" />
+          <line class="edge dim" x1="250" y1="80" x2="180" y2="255" />
+          <line class="edge dim" x1="250" y1="80" x2="360" y2="105" />
+          <line class="edge dim" x1="360" y1="105" x2="320" y2="200" />
+          <line class="edge dim" x1="320" y1="200" x2="180" y2="255" />
+          <line class="edge dim" x1="120" y1="130" x2="70" y2="70" />
+          <line class="edge dim" x1="180" y1="255" x2="60" y2="210" />
+          <line class="edge dim" x1="320" y1="200" x2="120" y2="130" />
+        </g>
+        <!-- right cluster -->
+        <g>
+          <line class="edge" x1="1340" y1="150" x2="1470" y2="95" />
+          <line class="edge dim" x1="1340" y1="150" x2="1420" y2="290" />
+          <line class="edge dim" x1="1470" y1="95" x2="1420" y2="290" />
+          <line class="edge dim" x1="1470" y1="95" x2="1545" y2="190" />
+          <line class="edge dim" x1="1420" y1="290" x2="1545" y2="190" />
+          <line class="edge dim" x1="1340" y1="150" x2="1260" y2="240" />
+          <line class="edge dim" x1="1470" y1="95" x2="1390" y2="55" />
+          <line class="edge dim" x1="1260" y1="240" x2="1420" y2="290" />
+        </g>
+
+        <!-- scattered faint stars across the field -->
+        <circle class="node sm star" cx="520" cy="60" r="1.6" />
+        <circle class="node sm star" cx="760" cy="350" r="1.8" />
+        <circle class="node sm star" cx="1040" cy="48" r="1.5" />
+        <circle class="node sm star" cx="900" cy="320" r="1.6" />
+        <circle class="node sm star" cx="1180" cy="350" r="1.8" />
+        <circle class="node sm star" cx="640" cy="300" r="1.4" />
+
+        <!-- left satellite nodes -->
+        <circle class="node sm" cx="60" cy="210" r="3" />
+        <circle class="node" cx="250" cy="80" r="4" />
+        <circle class="node" cx="180" cy="255" r="4" />
+        <circle class="node" cx="360" cy="105" r="3.4" />
+        <circle class="node sm" cx="320" cy="200" r="2.8" />
+        <circle class="node sm" cx="70" cy="70" r="2.4" />
+
+        <!-- right satellite nodes -->
+        <circle class="node sm" cx="1545" cy="190" r="3" />
+        <circle class="node" cx="1470" cy="95" r="4" />
+        <circle class="node" cx="1420" cy="290" r="4" />
+        <circle class="node" cx="1260" cy="240" r="3.4" />
+        <circle class="node sm" cx="1390" cy="55" r="2.6" />
+
+        <!-- glowing hubs framing the hero -->
+        <circle class="ring blue faint" cx="120" cy="130" r="15" />
+        <circle class="ring blue fainter" cx="120" cy="130" r="24" />
+        <circle class="ring blue faintest" cx="120" cy="130" r="34" />
+        <circle class="glow-blue" cx="120" cy="130" r="8.5" />
+
+        <circle class="ring purple faint" cx="1340" cy="150" r="15" />
+        <circle class="ring purple fainter" cx="1340" cy="150" r="24" />
+        <circle class="ring purple faintest" cx="1340" cy="150" r="34" />
+        <circle class="glow-purple" cx="1340" cy="150" r="7.5" />
+
+        <circle class="ring blue faint" cx="1470" cy="95" r="12" />
+        <circle class="glow-cyan" cx="1470" cy="95" r="6.5" />
+      </svg>
+
+      <!-- top-right handle -->
+      <div class="handle">
+        <span class="gh">github.com/Bishwajit-2810</span>
+        <span class="sep">·</span>
+        <span class="loc">Dhaka, Bangladesh</span>
+      </div>
+
+      <!-- centered hero -->
+      <div class="hero">
+        <div class="eyebrow">
+          <span class="rule"></span>
+          AI&nbsp;&nbsp;·&nbsp;&nbsp;BACKEND&nbsp;&nbsp;·&nbsp;&nbsp;MULTI-AGENT&nbsp;LLM&nbsp;SYSTEMS
+          <span class="rule"></span>
+        </div>
+
+        <h1 class="headline">
+          Architecting <span class="grad">Multi-Agent LLM Platforms</span>
+        </h1>
+
+        <p class="sub">
+          LangGraph orchestration <span class="amp">&amp;</span> MCP servers
+          <span class="amp">&amp;</span> RAG over pgvector — secure,
+          explainable, measurable.
+        </p>
+
+        <div class="badges">
+          <span class="badge">Python</span>
+          <span class="badge">FastAPI</span>
+          <span class="badge">FastMCP</span>
+          <span class="badge">LangGraph</span>
+          <span class="badge">pgvector</span>
+          <span class="badge">PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

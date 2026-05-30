@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bishwajit Chakraborty — Banner</title>
+
+    <!-- Fonts: serif display for the name, mono for labels/badges -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        /* ---- Tweak these to re-skin the banner ---- */
+        --bg-0: #06070b; /* outer background          */
+        --bg-1: #0a0c12; /* card background           */
+        --bg-2: #0d0f16; /* card background (2nd stop) */
+        --border: #20242f; /* card border               */
+        --text: #f3f4f7; /* primary text (the name)   */
+        --muted: #8b91a1; /* secondary text            */
+        --faint: #5a6072; /* labels, github handle     */
+        --accent-blue: #4da3ff; /* glowing blue node / dot   */
+        --accent-purple: #b06ef0; /* glowing purple node       */
+
+        --W: 1400px; /* export width  */
+        --H: 340px; /* export height */
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        background: var(--bg-0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        font-family: "JetBrains Mono", monospace;
+      }
+
+      /* The element you screenshot / export. */
+      .banner {
+        position: relative;
+        width: var(--W);
+        height: var(--H);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        overflow: hidden;
+        background:
+          radial-gradient(120% 140% at 12% 18%, #11141d 0%, transparent 55%),
+          radial-gradient(90% 120% at 88% 90%, #0e1018 0%, transparent 60%),
+          linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 100%);
+        color: var(--text);
+      }
+
+      /* Gradient hairline along the very top edge. */
+      .banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          transparent 0%,
+          var(--accent-blue) 18%,
+          #8a7bf0 45%,
+          var(--accent-purple) 68%,
+          transparent 100%
+        );
+        opacity: 0.9;
+      }
+
+      /* ---------- top-left: location ---------- */
+      .meta {
+        position: absolute;
+        top: 46px;
+        left: 60px;
+        z-index: 3;
+      }
+      .meta .loc {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        color: var(--text);
+      }
+      .meta .loc::before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: var(--accent-blue);
+        box-shadow: 0 0 10px 2px rgba(77, 163, 255, 0.7);
+      }
+      .meta .handle {
+        margin-top: 6px;
+        margin-left: 1px;
+        font-size: 13px;
+        color: var(--faint);
+        letter-spacing: 0.01em;
+      }
+
+      /* ---------- right block ---------- */
+      .right {
+        position: absolute;
+        top: 50px;
+        right: 60px;
+        text-align: right;
+        z-index: 3;
+        /* must be wider than the (nowrap) name, else text-align:right can't
+       pull it and the glyphs overflow past the edge */
+        width: 800px;
+      }
+      .eyebrow {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 14px;
+        font-size: 13px;
+        letter-spacing: 0.42em;
+        color: #aab1c2;
+        font-weight: 500;
+        white-space: nowrap;
+        text-shadow: 0 0 12px rgba(170, 177, 194, 0.35);
+      }
+      .eyebrow .rule {
+        display: inline-block;
+        width: 46px;
+        height: 2px;
+        background: var(--muted);
+        opacity: 0.7;
+        margin-left: 2px;
+      }
+      .name {
+        font-family: "Playfair Display", serif;
+        font-weight: 600;
+        font-size: 68px;
+        line-height: 1;
+        letter-spacing: 0.005em;
+        margin-top: 22px;
+        color: var(--text);
+        white-space: nowrap;
+      }
+      .tagline {
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 1.5;
+        margin-top: 16px;
+        color: var(--muted);
+      }
+      .tagline b {
+        font-weight: 600;
+        font-style: italic;
+        color: var(--accent-blue);
+      }
+      /* Playfair's "&" glyph is an ornate squiggle (even upright), so render
+     this one character in a clean sans-serif instead */
+      .tagline .amp {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.92em;
+        padding: 0 2px;
+      }
+
+      /* ---------- tech badges ---------- */
+      .badges {
+        position: absolute;
+        bottom: 38px;
+        right: 60px;
+        display: flex;
+        gap: 12px;
+        z-index: 3;
+      }
+      .badge {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        color: #d4d9e4;
+        padding: 8px 18px;
+        border: 1px solid rgba(120, 150, 210, 0.35);
+        border-radius: 999px;
+        background: linear-gradient(
+          180deg,
+          rgba(120, 150, 210, 0.1),
+          rgba(120, 150, 210, 0.03)
+        );
+        white-space: nowrap;
+        /* soft glow around the chip + faint inner highlight */
+        box-shadow:
+          0 0 14px rgba(77, 163, 255, 0.22),
+          0 0 3px rgba(77, 163, 255, 0.3),
+          inset 0 0 8px rgba(120, 150, 210, 0.08);
+        text-shadow: 0 0 10px rgba(140, 175, 235, 0.45);
+      }
+
+      /* ---------- network graph (left-center) ---------- */
+      .graph {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 700px;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
+      }
+      .graph .edge {
+        stroke: url(#edgeGrad);
+        stroke-width: 1.1;
+        stroke-dasharray: 5 7;
+        stroke-linecap: round;
+        opacity: 0.55;
+      }
+      .graph .edge.dim {
+        opacity: 0.28;
+      }
+      .graph .edge.live {
+        opacity: 0.8;
+        stroke-width: 1.4;
+      }
+
+      .graph .node {
+        fill: #717a8c;
+        opacity: 0.7;
+      }
+      .graph .node.sm {
+        opacity: 0.4;
+      }
+
+      /* glowing hub nodes (filled via radial gradients in <defs>) */
+      .graph .glow-blue {
+        fill: url(#nodeBlue);
+        filter: url(#soft);
+      }
+      .graph .glow-cyan {
+        fill: url(#nodeCyan);
+        filter: url(#soft);
+      }
+      .graph .glow-purple {
+        fill: url(#nodePurple);
+        filter: url(#soft);
+      }
+
+      /* halo rings around hubs */
+      .graph .ring {
+        fill: none;
+        stroke-width: 1;
+      }
+      .graph .ring.blue {
+        stroke: rgba(77, 163, 255, 0.45);
+      }
+      .graph .ring.purple {
+        stroke: rgba(176, 110, 240, 0.45);
+      }
+      .graph .ring.faint {
+        opacity: 0.35;
+      }
+      .graph .ring.fainter {
+        opacity: 0.16;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner" id="banner">
+      <!-- network graph -->
+      <svg
+        class="graph"
+        viewBox="0 0 700 340"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <defs>
+          <!-- edge gradient: blue -> violet -->
+          <linearGradient id="edgeGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#3a4150" />
+            <stop offset="55%" stop-color="#4a6b8c" />
+            <stop offset="100%" stop-color="#7d5bbf" />
+          </linearGradient>
+          <!-- radial fills for glowing hubs -->
+          <radialGradient id="nodeBlue" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#cfe6ff" />
+            <stop offset="35%" stop-color="#4da3ff" />
+            <stop offset="100%" stop-color="#1e63c8" />
+          </radialGradient>
+          <radialGradient id="nodeCyan" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#e2f6ff" />
+            <stop offset="40%" stop-color="#6fc4ff" />
+            <stop offset="100%" stop-color="#2f8fdc" />
+          </radialGradient>
+          <radialGradient id="nodePurple" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#f0ddff" />
+            <stop offset="40%" stop-color="#b06ef0" />
+            <stop offset="100%" stop-color="#7a3fc0" />
+          </radialGradient>
+          <!-- soft outer glow -->
+          <filter id="soft" x="-120%" y="-120%" width="340%" height="340%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="0.6" result="b" />
+            <feDropShadow
+              dx="0"
+              dy="0"
+              stdDeviation="6"
+              flood-color="#4da3ff"
+              flood-opacity="0.55"
+            />
+          </filter>
+        </defs>
+
+        <!-- edges -->
+        <g>
+          <line class="edge live" x1="338" y1="172" x2="520" y2="168" />
+          <line class="edge" x1="520" y1="168" x2="668" y2="180" />
+          <line class="edge dim" x1="338" y1="172" x2="196" y2="116" />
+          <line class="edge dim" x1="338" y1="172" x2="214" y2="252" />
+          <line class="edge dim" x1="196" y1="116" x2="316" y2="88" />
+          <line class="edge dim" x1="316" y1="88" x2="338" y2="172" />
+          <line class="edge dim" x1="316" y1="88" x2="432" y2="104" />
+          <line class="edge dim" x1="432" y1="104" x2="520" y2="168" />
+          <line class="edge dim" x1="432" y1="104" x2="338" y2="172" />
+          <line class="edge dim" x1="214" y1="252" x2="316" y2="88" />
+          <line class="edge dim" x1="214" y1="252" x2="338" y2="172" />
+          <line class="edge dim" x1="520" y1="168" x2="498" y2="250" />
+          <line class="edge dim" x1="498" y1="250" x2="338" y2="172" />
+          <line class="edge dim" x1="498" y1="250" x2="214" y2="252" />
+          <line class="edge dim" x1="668" y1="180" x2="498" y2="250" />
+          <line class="edge dim" x1="120" y1="190" x2="196" y2="116" />
+          <line class="edge dim" x1="120" y1="190" x2="214" y2="252" />
+        </g>
+
+        <!-- faint nodes -->
+        <circle class="node sm" cx="120" cy="190" r="2.6" />
+        <circle class="node" cx="196" cy="116" r="3.6" />
+        <circle class="node" cx="316" cy="88" r="4" />
+        <circle class="node" cx="432" cy="104" r="3.6" />
+        <circle class="node" cx="214" cy="252" r="4" />
+        <circle class="node" cx="498" cy="250" r="3.6" />
+        <circle class="node sm" cx="392" cy="206" r="2.6" />
+
+        <!-- hub: blue (primary) with halo rings -->
+        <circle class="ring blue faint" cx="338" cy="172" r="16" />
+        <circle class="ring blue fainter" cx="338" cy="172" r="24" />
+        <circle class="glow-blue" cx="338" cy="172" r="8.5" />
+
+        <!-- hub: cyan -->
+        <circle class="ring blue faint" cx="520" cy="168" r="13" />
+        <circle class="glow-cyan" cx="520" cy="168" r="7.5" />
+
+        <!-- hub: purple -->
+        <circle class="ring purple faint" cx="668" cy="180" r="13" />
+        <circle class="ring purple fainter" cx="668" cy="180" r="20" />
+        <circle class="glow-purple" cx="668" cy="180" r="7" />
+      </svg>
+
+      <!-- top-left meta -->
+      <div class="meta">
+        <div class="loc">Dhaka, Bangladesh</div>
+        <div class="handle">github.com/Bishwajit-2810</div>
+      </div>
+
+      <!-- right block -->
+      <div class="right">
+        <div class="eyebrow">
+          AI&nbsp;&nbsp;·&nbsp;&nbsp;BACKEND&nbsp;&nbsp;·&nbsp;&nbsp;MULTI-AGENT&nbsp;LLM&nbsp;SYSTEMS
+          <span class="rule"></span>
+        </div>
+        <h1 class="name">Bishwajit Chakraborty</h1>
+        <p class="tagline">
+          Architecting <b>multi-agent LLM platforms</b><br />
+          — LangGraph, MCP <span class="amp">&amp;</span> RAG over pgvector.
+        </p>
+      </div>
+
+      <!-- badges -->
+      <div class="badges">
+        <span class="badge">Python</span>
+        <span class="badge">FastAPI</span>
+        <span class="badge">FastMCP</span>
+        <span class="badge">LangGraph</span>
+        <span class="badge">pgvector</span>
+        <span class="badge">PostgreSQL</span>
+      </div>
+    </div>
+  </body>
+</html>
